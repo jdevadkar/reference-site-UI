@@ -1,0 +1,74 @@
+﻿{
+"PUBLIC": {
+  "Login": {
+    "pageTitle": "Xpanxion Connexion",
+    "title": "Bienvenue à Xpanxion",
+    "emailAddressPlaceHolder": "Adresse e-mail",
+    "passwordPlaceHolder": "Mot de passe",
+    "loginButton": "S'identifier"
+  },
+  "Registration": {
+    "pageTitle": "Enregistrement de l'utilisateur",
+    "title": "enregistrement",
+    "usernamePlaceHolder": "Nom d'utilisateur",
+    "emailAddressPlaceHolder": "Adresse électronique",
+    "passwordPlaceHolder": "Mot de passe",
+    "RegisterButton": "registre",
+    "HobbiesPlaceHolder": "Loisir",
+    "InterestPlaceHolder":"Intérêt",
+    "signinButton":"Se connecter",
+    "signupButton":"S'inscrire",
+    "aboutusLink":"À propos de nous",
+    "mobilePlaceHolder": "Mobile",
+    "goToLoginButton": "s'identifier"
+  }
+},
+"SHARED": {
+  "NAVIGATION": {
+    "productMenu": "produit",
+    "offerMenu": "offer",
+    "orderMenu": "order",
+    "invoiceMenu": "invoice"
+  },
+  "HEADER": {
+    "logoutConfirmation": {
+      "dialogTitle": "Connectez - Out",
+      "dialogMessage": "Voulez-vous quitter l'application?",
+      "primaryButton": "Oui",
+      "secondaryButton": "Non"
+    },
+    "userMenu": {
+      "profileMenu": "Profile",
+      "helpMenu": "Help",
+      "logoutMenu": "Connectez - Out",
+      "userMessage": "salut"
+    }
+  },
+  "FOOTER": {
+    "proweredBy": "Powered By:",
+    "copyRight": "© Xpanxion",
+    "customerSupport": "Customer Support at",
+    "supportEmail": "test"
+  }
+},
+"MESSAGES": {
+  "Dialog": {
+    "AuthFailedInvalidAuthResponse": {
+      "title": "Authentication Failed",
+      "message": "Echec de l'authentification pour l'utilisateur spécifié. Veuillez entrer des informations d'identification valides et réessayer. Si vous rencontrez toujours le même problème, contactez l'équipe de support technique.",
+      "primaryButton": "D'accord",
+      "secondaryButton": "",
+      "isShowSecondaryButton": "false",
+      "isLogoutOnPrimaryButton": "false"
+    }
+  },
+  "Toastr": {
+    "Fatal":"Une erreur s'est produite lors du traitement de votre demande. Réessayez ultérieurement ou contactez l'équipe du support client.",
+    "EmptyPassword":"Veuillez entrer le mot de passe.",
+    "EmptyEmailAddress": "Veuillez entrer l'adresse e-mail.",
+    "EmptyUserName":"S'il vous plaît entrer le nom.",
+      "ValidEmailAddress":"Veuillez entrer une adresse email valide.",
+      "UserRegistered":"Enregistrement utilisateur réussi."
+  }
+}
+}

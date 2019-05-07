@@ -1,0 +1,53 @@
+<div style="top: 2vh">
+    <img style="height: 70px; margin: 10px 0px 0px 775px;" src="\assets\Images\ust-global logo.png">
+</div>
+<div class="container-fluid" [ngStyle]="{'background-image': getUrl(), 'height' : '600px','background-size' : 'no-repeat', 'filter': 'blur(8px)',
+'-webkit-filter' : 'blur(8px)' }" >
+    <h5> Date:{{date | datex:'DD/MM/YYYY'}}</h5> <!-- using Datex pipe here -->
+
+      <div class="row">
+      </div>
+    </div>
+    <div class="login-pg-container col-lg-12 col-md-12 col-sm-12 col-xs-12 "  style='position: absolute; top: 10%;' >
+        <div class="login-base-container">
+            <h1 class="login-title">{{'PUBLIC.Registration.title' | translate }}</h1>
+
+            <div class="login-form">
+                <form role="form" #f="ngForm">
+                    <div class="form-group pos-relative">
+                        <input focusIndex="1" [attr.aria-label]="'SHARED.ARIALABLES.registerPage_username_input' | translate" type="text" name="username" class="form-control" id="username" placeholder="{{'PUBLIC.Registration.usernamePlaceHolder' | translate }}" [(ngModel)]="model.name" (keyup.enter)="register()" #username>
+                    </div>
+
+                    <div class="form-group pos-relative">
+
+                        <input focusIndex="1" [innerHTML]="model.email | safeHtml" [attr.aria-label]="'SHARED.ARIALABLES.registerPage_email_input' | translate" type="email" name="email" class="form-control" id="email" placeholder="{{'PUBLIC.Registration.emailAddressPlaceHolder' | translate }}" [(ngModel)]="model.email" (keyup.enter)="register()" #email>
+
+                    </div>
+
+                    <div class="form-group pos-relative">
+
+                        <input focusIndex="1" [attr.aria-label]="'SHARED.ARIALABLES.registerPage_password_input' | translate" name="password" type="password" class="form-control" id="pwd" placeholder="{{'PUBLIC.Registration.passwordPlaceHolder' | translate }}" [(ngModel)]="model.password" (keyup.enter)="register()" #password>
+                    </div>
+
+                    <div class="form-group pos-relative">
+
+                      <input focusIndex="1" restrict_input="numeric" [attr.aria-label]="'SHARED.ARIALABLES.registerPage_password_input' | translate" name="mobile" type="mobile" class="form-control" id="pwd" placeholder="{{'PUBLIC.Registration.mobilePlaceHolder' | translate }}" [(ngModel)]="model.mobile" (keyup.enter)="register()" #mobile>
+                  </div>
+
+
+                    <div class="form-group pos-relative">
+                        <input focusIndex="1" [attr.aria-label]="'SHARED.ARIALABLES.registerPage_hobbie_input' | translate" type="text" name="hobbies" class="form-control" id="hobbies" placeholder="{{'PUBLIC.Registration.HobbiesPlaceHolder' | translate }}" [(ngModel)]="model.hobbies" (keyup.enter)="register()" #hobbies>
+                    </div>
+
+                    <div class="form-group pos-relative">
+                        <input focusIndex="1" [attr.aria-label]="'SHARED.ARIALABLES.registerPage_interest_input' | translate" type="text" name="interest" class="form-control" id="interest" placeholder="{{'PUBLIC.Registration.InterestPlaceHolder' | translate }}" [(ngModel)]="model.interest" (keyup.enter)="register()" #interest>
+                    </div>
+
+                    <button type="button" class="btn btn-default" id="loadButton" (click)="register()" focusIndex="3">{{'PUBLIC.Registration.RegisterButton' | translate }}</button>
+                    <button type="button" class="btn btn-default" id="loadButton" (click)="goToLogin()" focusIndex="3">{{'PUBLIC.Registration.goToLoginButton' | translate }} </button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+

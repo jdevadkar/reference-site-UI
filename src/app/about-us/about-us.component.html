@@ -1,0 +1,19 @@
+<div [ngStyle]="{'background-image': getUrl(), 'height' : '600px', 'background-size' : 'no-repeat'}">
+<div style="top: 2vh">
+  <img style="height: 70px; margin: 10px 0px 0px 775px;" src="\assets\Images\ust-global logo.png" />
+</div>
+<div class="container-fluid"  >
+  <div class="row" style="text-align: center">
+    <div >
+      <!-- routes to Ust-Global's About Us page -->
+      <a style="color:brown; font-size: 30px" href="https://www.ust-global.com/about-us">UST Global Info</a>
+    </div>
+    <div>
+      <a style="color: rgba(247, 65, 65, 0.966) ; font-size: 30px " [routerLink]="" (click)="organizationStructure()"
+        >Organization Structure</a
+      >
+    </div>
+  </div>
+</div>
+<footer></footer>
+</div>

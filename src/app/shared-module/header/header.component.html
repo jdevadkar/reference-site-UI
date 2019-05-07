@@ -1,0 +1,31 @@
+﻿<div class="page-header" style="margin-top: 2vh">
+    <div class="container-fluid" style="padding: initial; background-color: lemonchiffon">
+        <div class="pull-left" style="padding-top: 15px">
+          <div style="margin: 0px 0px 0px 42px">
+            {{date | datex:'DD/MM/YYYY'}}
+          </div>
+
+        </div>
+        <div class="pull-right headerRightSection" style="padding-bottom: 15px;" >
+            <div class="headerContent userName" >
+                    <div (keyup.enter)="toggleUserMenu()" class="dropdown top-right-drp-down-menu" #userNavigationMenu (keyup.esc)="toggleUserMenu(true)">
+                        <a class="userName"  data-toggle="dropdown" >
+                            <span >{{'SHARED.HEADER.userMenu.userMessage' | translate }} </span><span class="userName">{{userName}}</span><img style="height: 25px; width: 25px" src="\assets\Images\personal.jpg">
+                        </a>
+                        <div class="jsProfileMenu element-focus-indicator uname-carot" data-toggle="dropdown" ></div>
+                        <ul class="top-menu-imp dropdown-menu displaynone jsProfileSubMenu" role="menu" aria-labelledby="dLabel">
+
+                            <li>
+                                <a style="padding: initial;" class="link-new-window" data-toggle="modal" data-target=".bs-example-modal-sm" id="logoutLink" href="javascript:void(0)" (click)="showLogoutConfirmation()">
+                                    {{'SHARED.HEADER.userMenu.logoutMenu' | translate }}
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                <div class="clear-fix"></div>
+                </div>
+                <logout-confirmation (onLogoutConfirmation)="onLogoutConfirmation($event)" #logout></logout-confirmation>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>

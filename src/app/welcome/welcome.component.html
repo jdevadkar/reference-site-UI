@@ -1,0 +1,159 @@
+<div style="top: 2vh; ">
+  <div class="p-5" >
+    <img class="pl-sm-5" style="height: 70px;margin: 10px 0px 0px 775px;" src="\assets\Images\ust-global logo.png" />
+  </div>
+</div>
+<header></header>
+<div class="container-fluid" >
+  <div class="row">
+    <div class="col-sm-2 " >
+
+      <div style="padding: 20px 20px 20px 20px; ">
+          <img src="\assets\Images\india.png">
+        <a [ngStyle]="{'color': 'gray', 'font-size': '20px', 'font-weight': 'bold'}" [routerLink]=""   (click)="india()">India</a>
+
+
+      </div>
+
+      <div style="padding: 20px 20px 20px 20px">
+        <img src="\assets\Images\world.jpg">
+        <a [ngStyle]="{'color': 'gray', 'font-size': '20px', 'font-weight': 'bold'}" [routerLink]=""  (click)="world()">World</a>
+      </div>
+
+      <div style="padding: 20px 20px 20px 20px">
+        <img src="\assets\Images\technology.jpg">
+        <a [ngStyle]="{'color': 'gray', 'font-size': '20px', 'font-weight': 'bold'}" [routerLink]=""  (click)="technology()">Technology</a>
+      </div>
+
+      <div style="padding: 20px 20px 20px 20px">
+          <img src="\assets\Images\health.jpg">
+        <a [ngStyle]="{'color': 'gray', 'font-size': '20px', 'font-weight': 'bold'}" [routerLink]=""  (click)="health()">Health</a>
+      </div>
+
+      <div style="padding: 20px 20px 20px 20px">
+          <img src="\assets\Images\science.jpg">
+        <a [ngStyle]="{'color': 'gray', 'font-size': '20px', 'font-weight': 'bold'}" [routerLink]=""  (click)="science()">Science</a>
+      </div>
+
+      <div style="padding: 20px 20px 20px 20px">
+          <img src="\assets\Images\personal.jpg">
+          <a [ngStyle]="{'color': 'gray', 'font-size': '20px', 'font-weight': 'bold'}" [routerLink]=""  (click)="hobbie()">My Hobby</a>
+        </div>
+        <div style="padding: 20px 20px 20px 20px">
+            <img src="\assets\Images\personal.jpg">
+            <a [ngStyle]="{'color': 'gray', 'font-size': '20px', 'font-weight': 'bold'}" [routerLink]=""  (click)="interests()">My Interest</a>
+          </div>
+    </div>
+    <div style="padding: 15px 15px 15px 15px">
+      <h3 >{{ headlines }}</h3>
+    </div>
+    <div class="col-sm-10">
+      <div class="row">
+        <div class="col-sm-9">
+          <div >
+              <a [ngStyle]="{'color': 'black', 'font-size': '18px', 'font-weight': 'bold'}" href="{{ news.articles[0].url }}">{{
+                  news.articles[0].title | ellipsis: "70"
+                }}</a>
+          </div>
+          <div>
+              {{
+                news.articles[0].content | ellipsis: "250"
+              }}
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <img
+            [src]="news.articles[0].urlToImage"
+            [style.width.px]="200"
+            [style.margin.px]="2"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-9">
+            <div>
+                <a [ngStyle]="{'color': 'black', 'font-size': '18px', 'font-weight': 'bold'}" href="{{ news.articles[1].url }}">{{
+                    news.articles[1].title | ellipsis: "70"
+                  }}</a>
+            </div>
+            <div>
+                {{
+                  news.articles[1].content | ellipsis: "250"
+                }}
+            </div>
+        </div>
+        <div class="col-sm-3">
+          <img
+            [src]="news.articles[1].urlToImage"
+            [style.width.px]="200"
+            [style.margin.px]="2"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-9">
+            <div>
+                <a [ngStyle]="{'color': 'black', 'font-size': '18px', 'font-weight': 'bold'}" href="{{ news.articles[2].url }}">{{
+                    news.articles[2].title | ellipsis: "70"
+                  }}</a>
+            </div>
+            <div>
+                {{
+                  news.articles[2].content | ellipsis: "250"
+                }}
+            </div>
+        </div>
+        <div class="col-sm-3">
+          <img
+            [src]="news.articles[2].urlToImage"
+            [style.width.px]="200"
+            [style.margin.px]="2"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-9">
+            <div>
+                <a [ngStyle]="{'color': 'black', 'font-size': '18px', 'font-weight': 'bold'}" href="{{ news.articles[3].url }}">{{
+                    news.articles[3].title | ellipsis: "70"
+                  }}</a>
+            </div>
+            <div>
+                {{
+                  news.articles[3].content | ellipsis: "250"
+                }}
+            </div>
+        </div>
+        <div class="col-sm-3">
+          <img
+            [src]="news.articles[3].urlToImage"
+            [style.width.px]="200"
+            [style.margin.px]="2"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-9">
+            <div>
+                <a [ngStyle]="{'color': 'black', 'font-size': '18px', 'font-weight': 'bold'}" href="{{ news.articles[4].url }}">{{
+                    news.articles[4].title | ellipsis: "70"
+                  }}</a>
+            </div>
+            <div>
+                {{
+                  news.articles[4].content | ellipsis: "250"
+                }}
+            </div>
+        </div>
+        <div class="col-sm-3">
+          <img
+            [src]="news.articles[4].urlToImage"
+            [style.width.px]="200"
+            [style.margin.px]="2"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer></footer>
